@@ -144,6 +144,7 @@ export async function getDocPageBySlug(slugParts: string[]): Promise<DocPage | n
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
+    .use(rehypeSanitize, sanitizeSchema)
     .use(function rehypeInlineCodeHighlight() {
       return async (tree) => {
         const highlighter = await getHighlighter();
@@ -219,7 +220,6 @@ export async function getDocPageBySlug(slugParts: string[]): Promise<DocPage | n
       },
       keepBackground: false
     })
-    .use(rehypeSanitize, sanitizeSchema)
     .use(rehypeStringify)
     .process(parsed.content);
 

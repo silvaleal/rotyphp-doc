@@ -99,6 +99,11 @@ body {
   font-size: 0.875rem;
 }
 
+.prose code {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+}
+
 .prose pre code span {
   color: var(--shiki-light);
 }

@@ -1,5 +1,5 @@
 {
-  "title": "Documentação",
+  "title": "RotyPHP",
   "sections": [
     {
       "title": "Introdução",
@@ -8,6 +8,20 @@
         { "title": "Instalação", "slug": "installation", "file": "installation.md" },
         { "title": "Uso básico", "slug": "quickstart", "file": "quickstart.md" },
         { "title": "Contribuidores", "slug": "contributors", "file": "contributors.md" }
+      ]
+    },
+    {
+      "title": "Models",
+      "items": [
+        { "title": "Introdução", "slug": "models/introduction", "file": "models/introduction.md" },
+        { "title": "Uso básico", "slug": "models/quickstart", "file": "models/quickstart.md" }
+      ]
+    },
+    {
+      "title": "Migrations",
+      "items": [
+        { "title": "Introdução", "slug": "migrations/introduction", "file": "migrations/introduction.md" },
+        { "title": "Uso básico", "slug": "migrations/quickstart", "file": "migrations/quickstart.md" }
       ]
     }
   ]

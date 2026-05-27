@@ -37,7 +37,7 @@ Para uma organização melhor, indicamos você utilizar diferentes arquivos em s
 
 # Obrigatório
 # É com este código que o rotyphp identifica qual banco de dados deseja usar
-Database::setConnector(__DIR__."/../database.db");
+Database::setConnector(__DIR__."/database.db");
 
 # ...
 
