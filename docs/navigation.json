@@ -1,0 +1,14 @@
+{
+  "title": "Documentação",
+  "sections": [
+    {
+      "title": "Introdução",
+      "items": [
+        { "title": "Introdução", "slug": "introduction", "file": "introduction.md" },
+        { "title": "Instalação", "slug": "installation", "file": "installation.md" },
+        { "title": "Uso básico", "slug": "quickstart", "file": "quickstart.md" },
+        { "title": "Contribuidores", "slug": "contributors", "file": "contributors.md" }
+      ]
+    }
+  ]
+}
