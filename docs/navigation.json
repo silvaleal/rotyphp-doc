@@ -23,6 +23,15 @@
         { "title": "Introdução", "slug": "migrations/introduction", "file": "migrations/introduction.md" },
         { "title": "Uso básico", "slug": "migrations/quickstart", "file": "migrations/quickstart.md" }
       ]
+    },
+    {
+      "title": "QueryBuilder",
+      "items": [
+        { "title": "Introdução", "slug": "querybuilder/introduction", "file": "querybuilder/introduction.md" },
+        { "title": "Instalação", "slug": "querybuilder/installation", "file": "querybuilder/installation.md" },
+        { "title": "Uso básico", "slug": "querybuilder/quickstart", "file": "querybuilder/quickstart.md" },
+        { "title": "Referência", "slug": "querybuilder/reference", "file": "querybuilder/reference.md" }
+      ]
     }
   ]
 }
