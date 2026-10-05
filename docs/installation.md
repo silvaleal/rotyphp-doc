@@ -1,10 +1,3 @@
----
-title: Instalação
-description: Como rodar a documentação localmente.
----
-
-
-
 # Instalação
 
 ## Requisitos
@@ -12,7 +5,7 @@ description: Como rodar a documentação localmente.
 - PHP 8+
 - Composer
 
-## Comando
+## Instalação via Composer
 
 ```bash
 composer require silvaleal/rotyphp

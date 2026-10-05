@@ -7,14 +7,15 @@
 require 'vendor/autoload.php';
 
 use RotyPHP\Database;
-use RotyPHP\SQLiteModel;
 
 # Obrigatório
 # É com este código que o rotyphp identifica qual banco de dados deseja usar
-Database::setConnector(__DIR__."/../database.db");
+RotyDriver::setName("sqlite");
+SQLiteDriver::define(__DIR__."/../database.db");
+RotyDatabase::setConnector(RotyDriver::getDriver());
 
 # Criando nosso Model.
-class User extends SQLiteModel {
+class User extends Model {
     public ?string $table = "users";
 }
 
@@ -37,7 +38,9 @@ Para uma organização melhor, indicamos você utilizar diferentes arquivos em s
 
 # Obrigatório
 # É com este código que o rotyphp identifica qual banco de dados deseja usar
-Database::setConnector(__DIR__."/database.db");
+RotyDriver::setName("sqlite");
+SQLiteDriver::define(__DIR__."/../database.db");
+RotyDatabase::setConnector(RotyDriver::getDriver());
 
 # ...
 
@@ -51,7 +54,7 @@ Database::setConnector(__DIR__."/database.db");
 # ...
 
 # Criando nosso Model.
-class User extends SQLiteModel {
+class User extends Model {
     public ?string $table = "users";
 }
 

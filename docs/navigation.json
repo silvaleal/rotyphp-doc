@@ -18,10 +18,11 @@
       ]
     },
     {
-      "title": "Migrations",
+      "title": "Schemas",
       "items": [
-        { "title": "Introdução", "slug": "migrations/introduction", "file": "migrations/introduction.md" },
-        { "title": "Uso básico", "slug": "migrations/quickstart", "file": "migrations/quickstart.md" }
+        { "title": "Introdução", "slug": "schemas/introduction", "file": "schemas/introduction.md" },
+        { "title": "Uso básico", "slug": "schemas/quickstart", "file": "schemas/quickstart.md" },
+        { "title": "Referência", "slug": "schemas/reference", "file": "schemas/reference.md" }
       ]
     },
     {
