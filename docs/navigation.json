@@ -14,14 +14,13 @@
       "title": "Models",
       "items": [
         { "title": "Introdução", "slug": "models/introduction", "file": "models/introduction.md" },
-        { "title": "Uso básico", "slug": "models/quickstart", "file": "models/quickstart.md" }
+        { "title": "Referência", "slug": "models/reference", "file": "models/reference.md" }
       ]
     },
     {
       "title": "Schemas",
       "items": [
         { "title": "Introdução", "slug": "schemas/introduction", "file": "schemas/introduction.md" },
-        { "title": "Uso básico", "slug": "schemas/quickstart", "file": "schemas/quickstart.md" },
         { "title": "Referência", "slug": "schemas/reference", "file": "schemas/reference.md" }
       ]
     },
