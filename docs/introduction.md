@@ -6,6 +6,15 @@ RotyPHP é um micro-ORM e Query Builder minimalista, simples e eficiente, constr
 
 Visite nosso [Packagist](https://packagist.org/packages/silvaleal/rotyphp) ou nosso [Github](https://github.com/silvaleal/rotyphp) para obter mais informações
 
+## Bancos de dados suportados
+
+O RotyPHP oferece suporte aos seguintes bancos de dados:
+
+- SQLite3
+- MySQL
+
+Veja como configurar cada um deles no [Uso básico](/docs/quickstart).
+
 ## Por que RotyPHP?
 
 Além de reduzir o código que você irá precisar escrever, o RotyPHP oferece [schemas](/docs/schemas/introduction) para configurar seu banco de dados, um [query-builder](/docs/querybuilder/introduction) e uma classe para os [modelos](/docs/models/introduction) para os consultar ou manipular os dados dos banco de dados.

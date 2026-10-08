@@ -1,18 +1,55 @@
 # Quickstart
 
-## Básico
+## Configuração do banco de dados
+
+Antes de usar o RotyPHP, é necessário configurar a conexão com o banco de dados. O RotyPHP suporta SQLite3 e MySQL.
+
+### SQLite3
+
 ```php
-<?php 
+<?php
 
 require 'vendor/autoload.php';
 
-use RotyPHP\Database;
+use RotyPHP\RotyDatabase;
+use RotyPHP\RotyDriver;
+use RotyPHP\SQLite3\SQLiteDriver;
 
 # Obrigatório
 # É com este código que o rotyphp identifica qual banco de dados deseja usar
 RotyDriver::setName("sqlite");
 SQLiteDriver::define(__DIR__."/../database.db");
 RotyDatabase::setConnector(RotyDriver::getDriver());
+```
+
+### MySQL
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+use RotyPHP\MySQL\MySQLDriver;
+use RotyPHP\RotyDatabase;
+use RotyPHP\RotyDriver;
+
+# Obrigatório
+# É com este código que o rotyphp identifica qual banco de dados deseja usar
+RotyDriver::setName("mysql");
+MySQLDriver::define("localhost", "root", "senha", "meu_banco");
+RotyDatabase::setConnector(RotyDriver::getDriver());
+```
+
+## Básico
+
+Com o banco de dados configurado, você pode criar seus modelos e começar a usar.
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+use RotyPHP\Model;
 
 # Criando nosso Model.
 class User extends Model {
